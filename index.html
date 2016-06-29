@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/indexFunctions.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link rel="shortcut icon" href="/assets/favicon.png">
+
+		<title>latteprog.github.io</title>
+	</head>
+
+	<body bgcolor="#EBEBEB">
+		<script type="text/javascript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-77904005-1', 'auto');
+			ga('send', 'pageview');
+
+			$.ajaxSetup ({
+			    cache: false
+			});
+			
+			requestedPage = parseParameter(window.location.search.substr(1), "post");
+
+			$(function() {
+				$("body").css("background-image", "url('assets/splashScreenBg.png')");
+				$("body").css("background-size", "100%");
+				$("body").css("background-attachment", "fixed");
+				$("body").css("background-color", "#FFFFFF");
+
+				if(localStorage.getItem("visitedPage") != "true")
+				{
+					loadSplashScreen(requestedPage);
+				} else {
+					if(requestedPage.length != 8)
+					{
+						loadHome();
+					} else {
+						loadHeader();
+						loadPost(requestedPage);
+					}
+				}
+			});
+		</script>
+
+		<div id="container"></div>
+	</body>
+</html>
