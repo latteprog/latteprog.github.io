@@ -1,0 +1,8 @@
+{
+	"id": "ce130e0c",
+	"title": "Random Numbers",
+	"date": "24.05.2016",
+	"synopsis": "ใครที่เคยเขียนโปรแกรมคงรู้ดีว่าคอมพิวเตอร์จะทำงานตามที่เราสั่งเป๊ะๆ ถ้าเรารันโปรแกรมเดิมซ้ำๆ ก็จะได้ผลลัพธ์เหมือนเดิมตลอด แต่เราก็รู้เช่นกันว่าคอมพิวเตอร์สามารถสุ่มเลขได้ สองประโยคนี้ดูจะขัดกันเพราะการสุ่มเลขควรจะเป็นสิ่งที่ทำหลายๆ ครั้งแล้วได้ผลไม่ซ้ำกัน และควรจะทำนายผลไม่ได้ ถ้าอย่างงั้นแล้วจริงๆ คอมพิวเตอร์สุ่มเลขได้ยังไงล่ะ?",
+	"facebookShareLink": "https://www.facebook.com/sharer/sharer.php?u=http%3A//latteprog.github.io/?post=ce130e0c",
+	"twitterShareLink": "https://twitter.com/home?status=http%3A//latteprog.github.io/?post=ce130e0c"
+}
