@@ -33,18 +33,18 @@
 				$("body").css("background-attachment", "fixed");
 				$("body").css("background-color", "#FFFFFF");
 
-				if(localStorage.getItem("visitedPage") != "true")
+				//if(localStorage.getItem("visitedPage") != "true")
+				//{
+					//loadSplashScreen(requestedPage);
+				//} else {
+				if(requestedPage.length != 8)
 				{
-					loadSplashScreen(requestedPage);
+					loadHome();
 				} else {
-					if(requestedPage.length != 8)
-					{
-						loadHome();
-					} else {
-						loadHeader();
-						loadPost(requestedPage);
-					}
+					loadHeader();
+					loadPost(requestedPage);
 				}
+				//}
 			});
 		</script>
 
