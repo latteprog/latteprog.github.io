@@ -19,11 +19,6 @@
 				text-decoration: none;
 			}
 
-			center
-			{
-				color: #C62818;
-			}
-
 			span
 			{
 				white-space: pre;
@@ -35,7 +30,7 @@
 
 	<body>
 		<div style="font-family: CSChatThai; font-size: 28px; line-height: 150%; color: #C62818; float: left;"><b>Dynamic Programming - Knapsack</b>&#09;<font face="CSChatThai" size="4" color="#999999">-&#09;26.05.2016</font></div>
-		<div style="font-family: CSChatThai; font-size: 18px; line-height: 170%; text-align: justify; color: #000000; clear: both;">
+		<div style="font-family: CSChatThai; font-size: 18px; text-align: justify; color: #000000; clear: both;">
 		ในตอนนี้เราจะพูดถึงปัญหาคลาสสิกปัญหาหนึ่ง คือปัญหา Knapsack ซึ่งเกี่ยวกับการเก็บของใส่กระเป๋าเพื่อให้ได้มูลค่ามากที่สุด กล่าวคือ เราจะมีของอยู่หลายๆ  แบบ ซึ่งแต่ละแบบจะมีมูลค่าไม่เท่ากันและมีน้ำหนักไม่เท่ากัน ทีนี้เราต้องการเก็บของใส่กระเป๋าเพื่อให้ได้มูลค่ามากที่สุด แต่เนื่องจากกระเป๋าใบนี้ใส่ของได้จำกัด เราจึงต้องหาวิธีเก็บที่จะเก็บของดีๆ
 		<br>จริงๆ แล้วปัญหานี้มีหลาย Variant แต่เราจะพูดถึงแค่ Variant เดียว คือปัญหา 0/1 Knapsack ซึ่งมีกฏเพิ่มเติมว่าของแต่ละแบบจะมีอยู่แค่ชิ้นเดียว (ไม่สามารถหยิบของแบบเดิมซ้ำสองครั้งได้) และของแต่ละชิ้นที่หยิบจะต้องหยิบเต็มชิ้น (ไม่สามารถแบ่งของเป็นครึ่งชิ้นแล้วใส่กระเป๋าแค่ครึ่งเดียว) สองกฎที่เพิ่มมานี้จึงเป็นที่มาของชื่อ 0/1
 		<br>ตัวอย่างปัญหา
