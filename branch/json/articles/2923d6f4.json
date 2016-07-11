@@ -1,8 +1,0 @@
-{
-	"id": "2923d6f4",
-	"title": "Faster Sorting Algorithm",
-	"date": "19.05.2016",
-	"synopsis": "ตั้งแต่ยุค 1940 เราได้ค้นพบอัลกอริทึม Mergesort ซึ่งสามารถแก้ปัญหาการเรียงลำดับได้รวดเร็ว ต่อมาก็ได้ค้นพบ Quicksort และ Heapsort ทั้งสามอัลกอริทึมนี้ใช้เวลา <i>O</i>(<i>n</i> log <i>n</i>) แต่จะมีอัลกอริทึมที่ทำได้เร็วกว่านี้รึเปล่า?",
-	"facebookShareLink": "https://www.facebook.com/sharer/sharer.php?u=http%3A//latteprog.github.io/?post=2923d6f4",
-	"twitterShareLink": "https://twitter.com/home?status=http%3A//latteprog.github.io/?post=2923d6f4"
-}
