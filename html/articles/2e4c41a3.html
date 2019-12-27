@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<style>
+			br
+			{
+				line-height: 340%;
+			}
+
+			div
+			{
+				line-height: 170%;
+			}
+
+			a
+			{
+				color: #C62818;
+				text-decoration: none;
+			}
+
+			span
+			{
+				white-space: pre;
+			}
+		</style>
+
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			console.log("hi");
+
+			async function loadmodel() {
+				console.log("test");
+
+				const MODEL_URL = "/assets/tf_models/acai_js/model.json";
+				const model = await tf.loadGraphModel(MODEL_URL);
+
+				console.log(model);
+			}
+
+			$(function() {
+				loadmodel();
+			});
+		</script>
+	</body>
+</html>	 
