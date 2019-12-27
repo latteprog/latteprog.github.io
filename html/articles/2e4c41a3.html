@@ -31,19 +31,17 @@
 
 	<body>
 		<script type="text/javascript">
-			console.log("hi");
+			const MODEL_URL = "/assets/tf_models/acai_js/model.json";
+			var model;
 
-			async function loadmodel() {
+			async function loadModel() {
 				console.log("test");
 
-				const MODEL_URL = "/assets/tf_models/acai_js/model.json";
-				const model = await tf.loadGraphModel(MODEL_URL);
-
-				console.log(model);
+				model = await tf.loadGraphModel(MODEL_URL);
 			}
 
 			$(window).load(function() {
-				loadmodel();
+				loadModel();
 			});
 		</script>
 	</body>
